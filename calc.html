@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <form name="f">
+               <input type="text" name="c" placeholder="0" id="calculator">
+               <br>
+               <input type="button" value="1" onclick="f.c.value+=1">
+               <input type="button" value="2" onclick="f.c.value+=2">
+               <input type="button" value="3" onclick="f.c.value+=3">
+               <input type="button" value="+" onclick="add()">
+               <br>
+               <br>
+               <input type="button" value="4" onclick="f.c.value+=4">
+               <input type="button" value="5" onclick="f.c.value+=5">
+               <input type="button" value="6" onclick="f.c.value+=6">
+               <input type="button" value="-" onclick="sub()">
+               <br>
+               <br>
+               <input type="button" value="7" onclick="f.c.value+=7">
+               <input type="button" value="8" onclick="f.c.value+=8">
+               <input type="button" value="9" onclick="f.c.value+=9">
+               <input type="button" value="/" onclick="div()">
+               <br>
+               <br>
+               <input type="button" value="c" onclick="f.c.value=''">
+               <input type="button" value="0" onclick="f.c.value+=0">
+               <input type="button" value="=" onclick="f.c.value=eval(f.c.value)">
+               <input type="button" value="x" onclick="mul()">
+               <br>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
